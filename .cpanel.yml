@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/corauifu/repositories/Coravita
-    - /bin/cp -R web $DEPLOYPATH
+    - export DEPLOYPATH=/home/corauifu/public_html
+    - /bin/cp -R .web $DEPLOYPATH

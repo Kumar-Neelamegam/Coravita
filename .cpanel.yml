@@ -1,5 +1,8 @@
 ---
 deployment:
+  ignore:
+    - ".git/"   
   tasks:
     - export DEPLOYPATH=/home/corauifu/public_html 
-    - /bin/cp -R site/ $DEPLOYPATH
+    - /bin/cp -R * $DEPLOYPATH
+  

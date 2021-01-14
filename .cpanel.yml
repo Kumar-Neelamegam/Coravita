@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/corauifu/public_html
-    - /bin/cp -R /site/* $DEPLOYPATH #copy all from sub folder root
+    - export DEPLOYPATH=/home/corauifu/public_html 
+    - /bin cp /site/* $DEPLOYPATH 

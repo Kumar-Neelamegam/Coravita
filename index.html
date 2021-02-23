@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title> Cora </title>
+        <title> Coravita </title>
         <meta name="description" content="Crowd Risk Assessment Application">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -27,7 +27,7 @@
 
         <!-- Js -->
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/owl.carousel.min.js"></script>
@@ -38,9 +38,76 @@
             ).init();
         </script>
 
+		<style>
+		table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    padding: 13px;
+    line-height: 1.42857143;
+    vertical-align: baseline;
+}
+td, th {
+    padding: 8px;
+}
+		@media only screen and (max-width: 760px), (min-device-width: 768px) 
+    and (max-device-width: 1024px)  {
+
+		/* Force table to not be like tables anymore */
+		table, thead, tbody, th, td, tr {
+			display: block;
+			
+		}
+
+		/* Hide table headers (but not display: none;, for accessibility) */
+		thead tr {
+			position: absolute;
+			top: -9999px;
+			left: -9999px;
+		}
+
+    tr {
+      margin: 0 0 1rem 0;
+    }
+      
+    tr:nth-child(odd) {
+      background: #ccc;
+    }
+    
+		td {
+			/* Behave  like a "row" */
+			border: none;
+			border-bottom: 1px solid #eee;
+			position: relative;
+			padding-left: 50%;
+		}
+
+		td:before {
+			/* Now like a table header */
+			position: absolute;
+			/* Top/left values mimic padding */
+			top: 0;
+			left: 6px;
+			width: 45%;
+			padding-right: 10px;
+			white-space: nowrap;
+		}
+
+		/*
+		Label the data
+    You could also use a data-* attribute and content for this. That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.
+		*/
+			
+		td:nth-of-type(1):before { content: ""; }
+		td:nth-of-type(2):before { content: "Conventional app"; }
+		td:nth-of-type(3):before { content: "CORA"; }
+		
+	}
+		</style>
     </head>
     <body>
- 
+
+    
+
 
     <header>
         <div class="container">
@@ -59,8 +126,8 @@
                         <b><h2>Crowd Risk Assessment Application</br></h2>
                         <p>Information for your protection</p></b>
                         <div class="download-btn">
-                            <a href="https://play.google.com/store/apps/details?id=com.psommerer.app.cora" class="andriod">
-                                <img src="images/andriod-button.png" alt="">
+                            <a href="app/coravita-v1.1.1.apk" downlaod="coravita-v1.1.1.apk" class="andriod">
+                                <img src="images/btn_download.png" alt="">
                             </a>  
                         </div>
 
@@ -82,7 +149,7 @@
                     <div class="title wow pulse" data-wow-delay=".5s">
                         <h2>Features of the application</h2>
                         <p>
-                            CORA … autonomous, all the time, everywhere
+                            CORAVITA … autonomous, all the time, everywhere
                         </p>
                     </div>
                 </div>
@@ -141,7 +208,10 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="title wow pulse" data-wow-delay=".5s">
-                        <h2>Helping people to stay in control</h2>
+                        <h2>Helping People To Get a Better Life</h2>
+                        <p>
+                            Every people is deserved to have a better living
+                        </p>
                     </div>
                 </div>
             </div>
@@ -179,7 +249,7 @@
                             <img class="media-object pull-left" src="images/item-4.png" alt="Image">
                         <div class="media-body">
                             <h4 class="media-heading">Displays</h4>
-                            <p>Risk information based on settings for instances every 5 minutes, every hour, 24 hours, 14 days</p>
+                            <p>Risk information based on settings for intances every 5 minutes, every hour, 24 hours, 14 days</p>
                         </div>
                         </div>
                         <div class="media wow fadeInDown" data-wow-delay="1.7s">
@@ -193,7 +263,7 @@
                                 <img class="media-object pull-left" src="images/item-5.png" alt="Image">
                             <div class="media-body">
                                 <h4 class="media-heading">Support & Customization</h4>
-                                <p>If you are interested to make your own customized version available to your customers, employees and other stakeholders, or if you want to report any problems, or have any other questions, please send an email message to <a href="mailto:coravita@erlauf.com">coravita@erlauf.com</a></p>
+                                <p>If you are interested to make your own customized version available to your customers, employees and other stakeholders, or if you want to report any problems, or have any other questions, please send an email message to <a href="mailto:coravita@erlauf.com">coravita@erlauf.com</p>
                             </div>
                         </div>
                         
@@ -203,8 +273,30 @@
             </div>
         </div>
     </section>
-	  
- 
+
+<!--
+    <section id="testimonial">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="block">
+                        <div id="owl-example" class="owl-carousel">
+                            <div> 
+                                <h5>
+                                    “I now understand what you are doing and it makes sense.  If your app ran on my iphone I would put it on in a second.  I have the government of Canada app and I have yet to receive a notification.”,  <span>Louis Payant, Ottawa, Canada.  </span>
+
+                                </h5>
+
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+
+
     <section id="team">
         <div class="container">
             <div class="row">
@@ -296,8 +388,8 @@
 
 
 
+
         
-    </body>
         
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
@@ -306,47 +398,47 @@
      https://firebase.google.com/docs/web/setup#available-libraries -->
 <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-analytics.js"></script>
 
-
-
-
+        
+    </body>
 	<!--modal popup for page load start-->
 	<div class="modal fade" id="overlay">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 style="font-weight:bold;" class="modal-title">WHY YOU SHOULD DOWNLOAD CORA</h4>
+        <h4 class="modal-title">WHY YOU SHOULD DOWNLOAD CORA</h4>
       </div>
       <div class="modal-body">
-        <p>Once the lock-downs imposed by almost all governments are over, you will become exposed again to more and more persons who may pose a risk to you.  CORA helps you to measure and display this risk to allow you to take appropriate measures to manage this risk.</p>
+        <p>Once the lock-downs imposed by almost all governments are over,&nbsp; you will become exposed again to more and more persons who may pose a risk to you.&nbsp;&nbsp;  CORA helps you to measure and display this risk to allow you to take appropriate measures to manage this risk. &nbsp;&nbsp; To install CORA,&nbsp; just click on the DOWNLOAD button and follow the instructions.</p>
 		<br>
-		<p>To install CORA, just click on the DOWNLOAD button and follow the instructions. But do not forget to de-install any previous version of this app you may have installed previously</p>
-		<p>If you think, that CORA is of no use to you, because you have one of the government sponsored conventional apps installed already, please look at the table below and consider the following:</p>
 		<p style="font-weight:bold;">Summary of comparison of CORA versus conventional applications</p>
 		<div class="table-responsive">    
-		<table class="table table-bordered" style="font-size:16px;width:100%;">
-		<tr><th></th><th>Conventional app</th><th>CORA</th></tr>
-		<tr><td>Method of detection</td><td>Bluetooth</td><td>Bluetooth</td></tr>
-		<tr><td>Other sources of information</td><td>-</td><td>Myworldindata.org</td></tr>
-		<tr><td>Trigger</td><td>Input of information by persons unknown to you about their status</td><td>Algorithm to calculate risk based on number of contacts and prevalence of risk factor</td></tr>
-		<tr><td>Result</td><td>Alert message</td><td>Alert message</td></tr>
-		<tr><td>Other Pro&Con’s</td><td>
-		<ul style="list-style: disc;"><li style="list-style: disc;">Works only if other people have same app installed</li>
-		<li style="list-style: disc;">Requires human intervention</li>
-		<li style="list-style: disc;">Limited to specific geographies</li>
+		<table class="table-bordered"   role="table" style="font-size:16px;" border="1">
+		<thead role="rowgroup">
+		<tr role="row" ><th  role="columnheader"></th><th  role="columnheader">Conventional app</th><th  role="columnheader">CORA</th></tr></thead><tbody role="rowgroup">
+		<tr  role="row"><td role="cell">Method of detection</td><td role="cell">Bluetooth</td><td role="cell">Bluetooth</td></tr>
+		<tr  role="row"><td role="cell">Other sources of information</td><td role="cell">-</td><td role="cell">Myworldindata.org</td></tr>
+		<tr  role="row"><td role="cell">Trigger</td><td role="cell">Input of information by persons unknown to you about their status</td><td>Algorithm to calculate risk</td></tr>
+		<tr  role="row"><td role="cell">Result</td><td role="cell">Alert message</td><td role="cell">Alert message</td></tr>
+		<tr  role="row"><td role="cell">Other Pro&Con’s</td><td role="cell">
+		<ul style="list-style: disc;"><li style="list-style: disc;">Works only if other people have same app installed.</li>
+		<li style="list-style: disc;">Requires human intervention.</li>
+		<li style="list-style: disc;">Limited to specific geographies.</li>
 		</ul></td>
-		<td><ul><li style="list-style: disc;">Works with any Bluetooth devices</li>
-		<li style="list-style: disc;">Not susceptible to human errors or malfeasance</li>
-		<li style="list-style: disc;">Global</li>
+		<td role="cell"><ul><li style="list-style: disc;">Works with any Bluetooth device even ear-buds etc.</li>
+		<li style="list-style: disc;">Not susceptible to human errors or malfeasance.</li>
+		<li style="list-style: disc;">Global.</li>
 		</ul></td>
-		</tr>
+		</tr></tbody>
 		</table>
 		</div>
-		<p>The way CORA collects information from around you is the same as in the conventional apps using Bluetooth every five minutes to identify people close to you.  The output of either app is also the same, as both apps send you an alert message if you were exposed to a high-risk situation. </p>
-		<p style="font-weight:bold;">So, what is the difference ?. </p>
-			<p style="white-space: pre-wrap;">CORA calculates your risk based on the number of contacts and the average infectiousness of the population around you.  The conventional apps store the identity of the mobile phones who have been deemed ‘close contacts’.  In order to alert you, a person which is on the list of your ‘close contacts’ and which tested positive, will have to enter this information into his/her mobile.  If this is not entered, you will never be alerted.  If a person who is not infected, accidentally or by purpose, enters into his/her mobile, that s/he is positive, you will get an alert, which I am sure is not a happy moment, given that ‘it may have been just meant as a joke’ by this person. </p>
-			<p>In essence, to safeguard your health, you are dependent on the reliability of persons you do not know.  In contrast, with CORA, no other person has to do anything to calculate and display your risk.  CORA only uses data not subject to manipulation by other people. </p>
-			<p>If this makes sense to you, but you do not want to de-install the conventional app, don’t worry.  You don’t have to.  CORA can be installed while you keep the other app on your mobile. </p>
+		<p>If you have a previous version of CORAVITA installed,&nbsp; de-install this app from your mobile thru the SETTINGS menu, before you download.</p>
+		<p>If you think,&nbsp; that CORA is of no use to you,&nbsp; because you have one of the government sponsored apps installed already, please consider the following:</p>
+		<p>The way CORA collects information from around you is the same as in the government sponsored apps using Bluetooth every five minutes to identify people close to you.&nbsp;&nbsp;  The output of either app is also the same,&nbsp; as both apps send you an alert message. </p>
+		<p>So, what is the difference ?. </p>
+			<p style="white-space: pre-wrap;">CORA calculates your risk based on the number of contacts and the average infectiousness of the population around you.&nbsp;&nbsp;  The government apps store the identity of the mobile phones who have been deemed ‘close contacts’. &nbsp;&nbsp; In order to alert you,&nbsp; a person which is on the list of your ‘close contacts’ and which tested positive, &nbsp;will have to enter this information into his/her mobile.  If this is not entered,&nbsp; you will never be alerted.&nbsp;&nbsp;  If a person who is not infected,&nbsp; accidentally or by purpose,&nbsp; enters into his/her mobile,&nbsp; that s/he is positive, &nbsp;you will get an alert,&nbsp; which I am sure is not a happy moment,&nbsp; given that ‘it may have been just meant as a joke’ by this person. </p>
+			<p>In essence,&nbsp; to safeguard your health, &nbsp;you are dependent on the reliability of persons you do not know. &nbsp;&nbsp; In contrast, &nbsp;with CORA,&nbsp; no other person has to do anything to calculate and display your risk. &nbsp;&nbsp; CORA only uses data not subject to manipulation by other people. </p>
+			<p>If this makes sense to you,&nbsp; but you do not want to de-install the government sponsored app,&nbsp; don’t worry. &nbsp;&nbsp; You don’t have to. &nbsp;&nbsp; CORA can be installed while you keep the other app on your mobile. </p>
 			<p>If you still can think of a reason why not to install CORA, &nbsp;please send us an email to
 			<a href="mailto:coravita@erlauf.com" >coravita@erlauf.com</a> .</p>
       </div>
@@ -370,14 +462,12 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
-   <!--modal popup for page load start-->
+  <!--modal popup for page load start-->
   $('#overlay').modal('show');
 
 setTimeout(function() {
     $('#overlay').modal('hide');
-}, 50000);
+}, 5000);
 <!--modal popup for page load start-->
-
 </script>
-        
 </html>
